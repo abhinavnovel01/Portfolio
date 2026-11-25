@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abhinav Yadav | AI/ML &amp; Data Science Enthusiast</title>
+    <meta name="description"
+        content="Explore the portfolio of Abhinav Yadav, a B.Tech Computer Science Engineering student specializing in Artificial Intelligence and Machine Learning, interested in Data Science, AI, and software development." />
+    <meta property="og:title" content="Abhinav Yadav | AI/ML &amp; Data Science Enthusiast" />
+    <meta property="og:description"
+        content="Explore the portfolio of Abhinav Yadav, a B.Tech Computer Science Engineering student specializing in Artificial Intelligence and Machine Learning, interested in Data Science, AI, and software development." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2307090E'/%3E%3Cpath d='M18 46L30 18h4l12 28h-5.2l-2.8-7H26l-2.8 7H18zm9.8-11.5h8.4L32 24.2l-4.2 10.3z' fill='%2338BDF8'/%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'ui-monospace', 'SFMono-Regular', 'monospace']
+                    },
+                    colors: {
+                        surface: {
+                            dark: '#07090E',
+                            cardDark: '#0D121C',
+                            light: '#F8FAFC',
+                            cardLight: '#FFFFFF'
+                        }
+                    }
+                }
+            }
+        };
+    </script>
+    <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 5rem;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            overflow-x: hidden;
+        }
+
+        .bg-dot-grid {
+            background-image: radial-gradient(rgba(148, 163, 184, 0.14) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+
+        .dark .bg-dot-grid {
+            background-image: radial-gradient(rgba(148, 163, 184, 0.09) 1px, transparent 1px);
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(16px);
+            transition: opacity 0.45s ease-out, transform 0.45s ease-out;
+        }
+
+        .reveal.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            .reveal {
+                opacity: 1;
+                transform: none;
+                transition: none;
+            }
+
+            .animate-bounce,
+            .animate-pulse {
+                animation: none !important;
+            }
+        }
+    </style>
+</head>
+
+<body
+    class="bg-surface-light text-slate-900 dark:bg-surface-dark dark:text-slate-100 antialiased selection:bg-sky-500/20 selection:text-sky-400 transition-colors duration-300">
+
+    <!-- Sticky Navbar -->
+    <header id="navbar"
+        class="fixed top-0 inset-x-0 z-50 transition-all duration-300 bg-transparent border-b border-transparent">
+        <nav aria-label="Primary Navigation"
+            class="mx-auto flex max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8 h-16">
+            <a href="#home"
+                class="font-mono text-sm font-semibold tracking-wider text-slate-900 dark:text-white hover:text-sky-600 dark:hover:text-sky-400 transition-colors">
+                ABHINAV YADAV
+            </a>
+
+            <div class="hidden md:flex items-center gap-1" id="desktop-nav">
+                <a href="#home" data-nav="home"
+                    class="nav-link px-3 py-1.5 rounded-lg text-sm font-medium transition-colors text-sky-600 dark:text-sky-400 bg-sky-500/10">Home</a>
+                <a href="#about" data-nav="about"
+                    class="nav-link px-3 py-1.5 rounded-lg text-sm font-medium transition-colors text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100/70 dark:hover:bg-slate-800/60">About</a>
+                <a href="#education" data-nav="education"
+                    class="nav-link px-3 py-1.5 rounded-lg text-sm font-medium transition-colors text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100/70 dark:hover:bg-slate-800/60">Education</a>
+                <a href="#skills" data-nav="skills"
+                    class="nav-link px-3 py-1.5 rounded-lg text-sm font-medium transition-colors text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100/70 dark:hover:bg-slate-800/60">Skills</a>
+                <a href="#projects" data-nav="projects"
+                    class="nav-link px-3 py-1.5 rounded-lg text-sm font-medium transition-colors text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100/70 dark:hover:bg-slate-800/60">Projects</a>
+                <a href="#contact" data-nav="contact"
+                    class="nav-link px-3 py-1.5 rounded-lg text-sm font-medium transition-colors text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100/70 dark:hover:bg-slate-800/60">Contact</a>
+            </div>
+
+            <div class="hidden md:flex items-center gap-2.5">
+                <button type="button" id="theme-toggle-desktop" aria-label="Toggle theme"
+                    class="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-slate-200 dark:border-slate-800 bg-white/70 dark:bg-slate-900/70 text-slate-700 dark:text-slate-300 hover:border-sky-500/50 hover:text-sky-600 dark:hover:text-sky-400 transition-colors">
+                    <i data-lucide="sun" class="h-4 w-4 hidden dark:block"></i>
+                    <i data-lucide="moon" class="h-4 w-4 block dark:hidden"></i>
+                </button>
+                <a href="https://github.com/abhinavnovel01/Portfolio" target="_blank" rel="noopener noreferrer"
+                    class="inline-flex items-center justify-center gap-1.5 px-3.5 py-1.5 text-xs font-medium rounded-lg border border-slate-300 dark:border-slate-700/80 text-slate-800 dark:text-slate-200 hover:border-sky-500/60 hover:text-sky-600 dark:hover:text-sky-400 transition-colors">
+                    <i data-lucide="file-text" class="h-3.5 w-3.5"></i>
+                    Resume
+                </a>
+            </div>
+
+            <div class="flex md:hidden items-center gap-2">
+                <button type="button" id="theme-toggle-mobile" aria-label="Toggle theme"
+                    class="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-slate-200 dark:border-slate-800 bg-white/70 dark:bg-slate-900/70 text-slate-700 dark:text-slate-300">
+                    <i data-lucide="sun" class="h-4 w-4 hidden dark:block"></i>
+                    <i data-lucide="moon" class="h-4 w-4 block dark:hidden"></i>
+                </button>
+                <button type="button" id="mobile-menu-btn" aria-label="Open navigation menu" aria-expanded="false"
+                    class="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-200">
+                    <i data-lucide="menu" id="mobile-menu-icon" class="h-5 w-5"></i>
+                </button>
+            </div>
+        </nav>
+
+        <div id="mobile-drawer"
+            class="hidden md:hidden border-t border-slate-200/70 dark:border-slate-800/80 bg-white/95 dark:bg-surface-dark/95 backdrop-blur-md px-4 py-4 space-y-1">
+            <a href="#home"
+                class="mobile-nav-link block rounded-lg px-3 py-2.5 text-sm font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800/60">Home</a>
+            <a href="#about"
+                class="mobile-nav-link block rounded-lg px-3 py-2.5 text-sm font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800/60">About</a>
+            <a href="#education"
+                class="mobile-nav-link block rounded-lg px-3 py-2.5 text-sm font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800/60">Education</a>
+            <a href="#skills"
+                class="mobile-nav-link block rounded-lg px-3 py-2.5 text-sm font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800/60">Skills</a>
+            <a href="#projects"
+                class="mobile-nav-link block rounded-lg px-3 py-2.5 text-sm font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800/60">Projects</a>
+            <a href="#contact"
+                class="mobile-nav-link block rounded-lg px-3 py-2.5 text-sm font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800/60">Contact</a>
+            <div class="pt-3 mt-2 border-t border-slate-200/70 dark:border-slate-800">
+                <a href="https://github.com/abhinavnovel01/Portfolio" target="_blank" rel="noopener noreferrer"
+                    class="flex w-full items-center justify-center gap-2 rounded-xl bg-sky-500 px-5 py-2.5 text-sm font-semibold text-slate-950 hover:bg-sky-400">
+                    <i data-lucide="file-text" class="h-4 w-4"></i>
+                    Resume / Portfolio Repo
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden">
+            <div aria-hidden="true"
+                class="pointer-events-none absolute -top-24 left-1/2 -translate-x-1/2 h-[420px] w-[720px] rounded-full bg-sky-500/10 blur-[120px]">
+            </div>
+
+            <div class="mx-auto max-w-6xl w-full px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+                    <div class="lg:col-span-7">
+                        <div
+                            class="inline-flex items-center gap-2 rounded-full border border-sky-500/30 bg-sky-500/10 px-3.5 py-1.5 text-xs font-medium text-sky-700 dark:text-sky-300 mb-5">
+                            <span class="h-1.5 w-1.5 rounded-full bg-sky-500 animate-pulse"></span>
+                            B.Tech Student | AI &amp; Machine Learning
+                        </div>
+
+                        <p class="font-mono text-sm sm:text-base text-slate-600 dark:text-slate-300 mb-3">
+                            Hi, I'm Abhinav Yadav.
+                        </p>
+
+                        <h1
+                            class="text-3xl sm:text-5xl lg:text-[3.25rem] font-bold tracking-tight text-slate-900 dark:text-white leading-[1.12]">
+                            Building intelligent solutions through data, AI &amp; code.
+                        </h1>
+
+                        <p
+                            class="mt-5 max-w-2xl text-base sm:text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+                            I'm a Computer Science Engineering student specializing in Artificial Intelligence and
+                            Machine Learning, passionate about data science, intelligent systems, and building
+                            technology-driven solutions. I enjoy exploring data, solving problems, and turning ideas
+                            into practical projects.
+                        </p>
+
+                        <div class="mt-8 flex flex-wrap items-center gap-3">
+                            <a href="#projects"
+                                class="inline-flex items-center justify-center gap-2 rounded-xl bg-sky-500 px-6 py-3 text-sm font-semibold text-slate-950 hover:bg-sky-400 shadow-sm shadow-sky-500/20 border border-sky-400/50 transition-all">
+                                Explore My Projects
+                                <i data-lucide="arrow-right" class="h-4 w-4"></i>
+                            </a>
+                            <a href="#contact"
+                                class="inline-flex items-center justify-center gap-2 rounded-xl bg-slate-900 text-white hover:bg-slate-800 dark:bg-slate-800/90 dark:text-slate-100 dark:hover:bg-slate-700 border border-slate-700/60 px-6 py-3 text-sm font-semibold transition-all">
+                                Get In Touch
+                            </a>
+                            <a href="https://github.com/abhinavnovel01/Portfolio" target="_blank"
+                                rel="noopener noreferrer"
+                                class="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-300 dark:border-slate-700/80 px-6 py-3 text-sm font-semibold text-slate-800 dark:text-slate-200 hover:border-sky-500/60 hover:text-sky-600 dark:hover:text-sky-400 transition-all">
+                                <i data-lucide="download" class="h-4 w-4"></i>
+                                Download Resume
+                            </a>
+                        </div>
+
+                        <div class="mt-8 flex items-center gap-3" id="hero-socials">
+                            <span
+                                class="text-xs font-mono uppercase tracking-wider text-slate-500 dark:text-slate-400 mr-1">Connect</span>
+                            <a href="https://github.com/abhinavnovel01" target="_blank" rel="noopener noreferrer"
+                                aria-label="GitHub"
+                                class="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-surface-cardDark/80 text-slate-700 dark:text-slate-300 hover:border-sky-500/50 hover:text-sky-600 dark:hover:text-sky-400 transition-colors">
+                                <i data-lucide="github" class="h-4 w-4"></i>
+                            </a>
+                            <a href="mailto:abhinav.ydv0202@gmail.com" aria-label="Email"
+                                class="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-surface-cardDark/80 text-slate-700 dark:text-slate-300 hover:border-sky-500/50 hover:text-sky-600 dark:hover:text-sky-400 transition-colors">
+                                <i data-lucide="mail" class="h-4 w-4"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-5">
+                        <div
+                            class="relative rounded-3xl border border-slate-200/80 dark:border-slate-800/90 bg-white/80 dark:bg-[#0B101B]/90 backdrop-blur-md p-5 shadow-xl dark:shadow-2xl dark:shadow-sky-950/20 overflow-hidden">
+                            <div
+                                class="flex items-center justify-between border-b border-slate-200/70 dark:border-slate-800/80 pb-3 mb-4">
+                                <div class="flex items-center gap-1.5">
+                                    <span class="h-2.5 w-2.5 rounded-full bg-slate-300 dark:bg-slate-700"></span>
+                                    <span class="h-2.5 w-2.5 rounded-full bg-slate-300 dark:bg-slate-700"></span>
+                                    <span class="h-2.5 w-2.5 rounded-full bg-sky-500/80"></span>
+                                </div>
+                                <span
+                                    class="font-mono text-[11px] text-slate-500 dark:text-slate-400">ai_ml_workspace.py</span>
+                            </div>
+
+                            <div
+                                class="relative h-56 sm:h-64 rounded-2xl border border-slate-200/70 dark:border-slate-800/80 bg-slate-50/80 dark:bg-[#070A12] overflow-hidden bg-dot-grid">
+                                <canvas id="neural-canvas" aria-label="Interactive neural network node visualization"
+                                    class="h-full w-full block"></canvas>
+                                <div
+                                    class="absolute bottom-3 left-3 right-3 sm:right-auto sm:w-64 rounded-xl border border-slate-200/90 dark:border-slate-700/80 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md p-3 shadow-sm">
+                                    <pre
+                                        class="font-mono text-[11px] leading-relaxed text-slate-700 dark:text-slate-300 overflow-x-auto"><code><span class="text-sky-600 dark:text-sky-400">focus</span> = [
+  <span class="text-indigo-600 dark:text-indigo-400">"Machine Learning"</span>,
+  <span class="text-indigo-600 dark:text-indigo-400">"Data Science"</span>
+]</code></pre>
+                                </div>
+                            </div>
+
+                            <div class="mt-4 grid grid-cols-2 gap-3">
+                                <div
+                                    class="rounded-xl border border-slate-200/70 dark:border-slate-800/80 bg-slate-50/70 dark:bg-slate-900/60 p-3">
+                                    <p
+                                        class="font-mono text-[10px] uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                                        Domain</p>
+                                    <p class="mt-1 text-xs font-semibold text-slate-800 dark:text-slate-100">AI &amp;
+                                        Machine Learning</p>
+                                </div>
+                                <div
+                                    class="rounded-xl border border-slate-200/70 dark:border-slate-800/80 bg-slate-50/70 dark:bg-slate-900/60 p-3 flex items-center justify-between">
+                                    <div>
+                                        <p
+                                            class="font-mono text-[10px] uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                                            Signal</p>
+                                        <p class="mt-1 text-xs font-semibold text-slate-800 dark:text-slate-100">Data
+                                            Driven</p>
+                                    </div>
+                                    <svg viewBox="0 0 64 24" class="h-6 w-14 text-sky-500" fill="none"
+                                        aria-hidden="true">
+                                        <path d="M2 20 C 12 18, 16 8, 26 11 C 34 14, 40 4, 50 6 C 56 7, 60 3, 62 2"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12 flex justify-center">
+                    <a href="#about" aria-label="Scroll to About section"
+                        class="inline-flex flex-col items-center gap-1.5 text-xs font-mono text-slate-500 dark:text-slate-400 hover:text-sky-600 dark:hover:text-sky-400 transition-colors">
+                        <span>Scroll</span>
+                        <i data-lucide="arrow-down" class="h-4 w-4 animate-bounce"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 sm:py-24 border-t border-slate-200/60 dark:border-slate-800/60">
+            <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+                <div class="reveal max-w-2xl mb-10 md:mb-12">
+                    <span
+                        class="inline-block font-mono text-xs uppercase tracking-widest text-sky-600 dark:text-sky-400 mb-2">01
+                        / Introduction</span>
+                    <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 dark:text-white">About Me
+                    </h2>
+                    <p class="mt-2.5 text-sm sm:text-base text-slate-600 dark:text-slate-400 leading-relaxed">Curious
+                        mind. Analytical thinking. Building with technology.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+                    <div
+                        class="reveal lg:col-span-6 space-y-4 text-slate-600 dark:text-slate-300 text-base leading-relaxed">
+                        <p>I'm Abhinav Yadav, a second-year B.Tech student pursuing Computer Science Engineering with a
+                            specialization in Artificial Intelligence and Machine Learning at Sri Ramswaroop Memorial
+                            University, Lucknow.</p>
+                        <p>My interests lie in Data Science, Machine Learning, Artificial Intelligence, and software
+                            development. I enjoy learning new technologies, analyzing data, experimenting with ideas,
+                            and building projects that solve real-world problems.</p>
+                        <p>Currently, I'm focused on strengthening my programming fundamentals, developing my analytical
+                            skills, exploring AI/ML concepts, and building a strong foundation for a career in
+                            technology.</p>
+                    </div>
+
+                    <div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div
+                            class="reveal group rounded-2xl border border-slate-200/80 dark:border-slate-800/90 bg-white/80 dark:bg-surface-cardDark/80 p-5 hover:border-sky-500/40 transition-all duration-300 hover:-translate-y-0.5 shadow-sm dark:shadow-none">
+                            <div
+                                class="flex h-10 w-10 items-center justify-center rounded-xl bg-sky-500/10 text-sky-600 dark:text-sky-400 border border-sky-500/20 mb-3.5">
+                                <i data-lucide="brain-circuit" class="h-5 w-5"></i>
+                            </div>
+                            <h3 class="text-sm font-semibold text-slate-900 dark:text-white">AI &amp; Machine Learning
+                            </h3>
+                            <p class="mt-1.5 text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                                Exploring intelligent systems and machine learning concepts.</p>
+                        </div>
+
+                        <div
+                            class="reveal group rounded-2xl border border-slate-200/80 dark:border-slate-800/90 bg-white/80 dark:bg-surface-cardDark/80 p-5 hover:border-sky-500/40 transition-all duration-300 hover:-translate-y-0.5 shadow-sm dark:shadow-none">
+                            <div
+                                class="flex h-10 w-10 items-center justify-center rounded-xl bg-sky-500/10 text-sky-600 dark:text-sky-400 border border-sky-500/20 mb-3.5">
+                                <i data-lucide="database" class="h-5 w-5"></i>
+                            </div>
+                            <h3 class="text-sm font-semibold text-slate-900 dark:text-white">Data Science</h3>
+                            <p class="mt-1.5 text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                                Learning to extract meaningful insights from data.</p>
+                        </div>
+
+                        <div
+                            class="reveal group rounded-2xl border border-slate-200/80 dark:border-slate-800/90 bg-white/80 dark:bg-surface-cardDark/80 p-5 hover:border-sky-500/40 transition-all duration-300 hover:-translate-y-0.5 shadow-sm dark:shadow-none">
+                            <div
+                                class="flex h-10 w-10 items-center justify-center rounded-xl bg-sky-500/10 text-sky-600 dark:text-sky-400 border border-sky-500/20 mb-3.5">
+                                <i data-lucide="terminal" class="h-5 w-5"></i>
+                            </div>
+                            <h3 class="text-sm font-semibold text-slate-900 dark:text-white">Problem Solving</h3>
+                            <p class="mt-1.5 text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                                Developing logical thinking and programming skills.</p>
+                        </div>
+
+                        <div
+                            class="reveal group rounded-2xl border border-slate-200/80 dark:border-slate-800/90 bg-white/80 dark:bg-surface-cardDark/80 p-5 hover:border-sky-500/40 transition-all duration-300 hover:-translate-y-0.5 shadow-sm dark:shadow-none">
+                            <div
+                                class="flex h-10 w-10 items-center justify-center rounded-xl bg-sky-500/10 text-sky-600 dark:text-sky-400 border border-sky-500/20 mb-3.5">
+                                <i data-lucide="sparkles" class="h-5 w-5"></i>
+                            </div>
+                            <h3 class="text-sm font-semibold text-slate-900 dark:text-white">Continuous Learning</h3>
+                            <p class="mt-1.5 text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                                Constantly experimenting with new tools and technologies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="py-20 sm:py-24 border-t border-slate-200/60 dark:border-slate-800/60">
+            <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+                <div class="reveal max-w-2xl mb-10 md:mb-12">
+                    <span
+                        class="inline-block font-mono text-xs uppercase tracking-widest text-sky-600 dark:text-sky-400 mb-2">02
+                        / Academic Background</span>
+                    <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Education
+                    </h2>
+                    <p class="mt-2.5 text-sm sm:text-base text-slate-600 dark:text-slate-400 leading-relaxed">Formal
+                        academic foundation in computer science, artificial intelligence, and machine learning.</p>
+                </div>
+
+                <div class="reveal relative pl-6 sm:pl-8 border-l border-slate-200 dark:border-slate-800">
+                    <span aria-hidden="true"
+                        class="absolute -left-[9px] top-6 h-4 w-4 rounded-full border-2 border-sky-500 bg-white dark:bg-surface-dark"></span>
+
+                    <div
+                        class="rounded-2xl border border-slate-200/80 dark:border-slate-800/90 bg-white/85 dark:bg-surface-cardDark/85 p-6 sm:p-8 shadow-sm dark:shadow-none">
+                        <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-sky-500/10 text-sky-600 dark:text-sky-400 border border-sky-500/20">
+                                    <i data-lucide="graduation-cap" class="h-6 w-6"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg sm:text-xl font-bold text-slate-900 dark:text-white">Bachelor of
+                                        Technology (B.Tech)</h3>
+                                    <p class="mt-1 text-sm sm:text-base font-medium text-slate-700 dark:text-slate-200">
+                                        Computer Science Engineering</p>
+                                </div>
+                            </div>
+                            <span
+                                class="inline-flex items-center gap-1.5 self-start rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-700 dark:text-emerald-300">
+                                <span class="h-1.5 w-1.5 rounded-full bg-emerald-500"></span>
+                                Ongoing &middot; Second Year
+                            </span>
+                        </div>
+
+                        <div
+                            class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4 pt-6 border-t border-slate-200/70 dark:border-slate-800/80">
+                            <div class="rounded-xl border border-sky-500/25 bg-sky-500/5 p-4">
+                                <div
+                                    class="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-sky-600 dark:text-sky-400">
+                                    <i data-lucide="book-open" class="h-3.5 w-3.5"></i>
+                                    Specialization
+                                </div>
+                                <p class="mt-1.5 text-sm font-semibold text-slate-900 dark:text-white">Artificial
+                                    Intelligence &amp; Machine Learning</p>
+                            </div>
+
+                            <div
+                                class="rounded-xl border border-slate-200/80 dark:border-slate-800 bg-slate-50/70 dark:bg-slate-900/60 p-4">
+                                <div
+                                    class="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                                    <i data-lucide="map-pin" class="h-3.5 w-3.5"></i>
+                                    Institution &amp; Location
+                                </div>
+                                <p class="mt-1.5 text-sm font-semibold text-slate-900 dark:text-white">Sri Ramswaroop
+                                    Memorial University, Lucknow</p>
+                                <p class="mt-0.5 text-xs text-slate-600 dark:text-slate-400">Lucknow, Uttar Pradesh,
+                                    India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20 sm:py-24 border-t border-slate-200/60 dark:border-slate-800/60">
+            <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+                <div class="reveal max-w-2xl mb-10 md:mb-12">
+                    <span
+                        class="inline-block font-mono text-xs uppercase tracking-widest text-sky-600 dark:text-sky-400 mb-2">03
+                        / Capabilities</span>
+                    <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Technical
+                        Skills</h2>
+                    <p class="mt-2.5 text-sm sm:text-base text-slate-600 dark:text-slate-400 leading-relaxed">
+                        Technologies and tools I'm learning and working with.</p>
+                </div>
+
+                <div id="skills-grid" class="grid grid-cols-1 md:grid-cols-2 gap-5"></div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 sm:py-24 border-t border-slate-200/60 dark:border-slate-800/60">
+            <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+                    <div class="reveal max-w-2xl">
+                        <span
+                            class="inline-block font-mono text-xs uppercase tracking-widest text-sky-600 dark:text-sky-400 mb-2">04
+                            / Selected Work</span>
+                        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 dark:text-white">
+                            Featured Projects</h2>
+                        <p class="mt-2.5 text-sm sm:text-base text-slate-600 dark:text-slate-400 leading-relaxed">Ideas
+                            transformed into practical projects.</p>
+                    </div>
+
+                    <div id="project-filters" role="tablist" aria-label="Filter projects by category"
+                        class="inline-flex flex-wrap gap-1.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/70 dark:bg-surface-cardDark/80 p-1.5 self-start">
+                    </div>
+                </div>
+
+                <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+            </div>
+        </section>
+
+        <!-- Currently Exploring Section -->
+        <section id="exploring" class="py-16 sm:py-20 border-t border-slate-200/60 dark:border-slate-800/60">
+            <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+                <div class="reveal max-w-2xl mb-10 md:mb-12">
+                    <span
+                        class="inline-block font-mono text-xs uppercase tracking-widest text-sky-600 dark:text-sky-400 mb-2">05
+                        / Learning Roadmap</span>
+                    <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Currently
+                        Exploring</h2>
+                    <p class="mt-2.5 text-sm sm:text-base text-slate-600 dark:text-slate-400 leading-relaxed">Areas of
+                        AI, data science, and analytical computing I am actively studying.</p>
+                </div>
+
+                <div
+                    class="reveal rounded-2xl border border-slate-200/80 dark:border-slate-800/90 bg-white/80 dark:bg-surface-cardDark/80 p-6 sm:p-8 shadow-sm dark:shadow-none">
+                    <div id="exploring-tags" class="flex flex-wrap gap-2.5"></div>
+                    <div class="mt-6 pt-5 border-t border-slate-200/70 dark:border-slate-800/80">
+                        <span
+                            class="font-mono text-[11px] uppercase tracking-wider text-sky-600 dark:text-sky-400">Active
+                            Focus</span>
+                        <p id="exploring-detail" class="mt-1 text-sm text-slate-700 dark:text-slate-300"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GitHub Section -->
+        <section id="github" class="py-20 sm:py-24 border-t border-slate-200/60 dark:border-slate-800/60">
+            <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+                <div class="reveal max-w-2xl mb-10 md:mb-12">
+                    <span
+                        class="inline-block font-mono text-xs uppercase tracking-widest text-sky-600 dark:text-sky-400 mb-2">06
+                        / Open Source</span>
+                    <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 dark:text-white">GitHub
+                        Profile</h2>
+                    <p class="mt-2.5 text-sm sm:text-base text-slate-600 dark:text-slate-400 leading-relaxed">Live
+                        profile and public repositories fetched directly from GitHub.</p>
+                </div>
+
+                <div
+                    class="reveal rounded-2xl border border-slate-200/80 dark:border-slate-800/90 bg-white/85 dark:bg-surface-cardDark/85 p-6 sm:p-8 shadow-sm dark:shadow-none">
+                    <div
+                        class="flex flex-col sm:flex-row sm:items-center justify-between gap-6 pb-6 border-b border-slate-200/70 dark:border-slate-800/80">
+                        <div class="flex items-center gap-4">
+                            <div id="github-avatar-wrap"
+                                class="flex h-16 w-16 items-center justify-center rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-100 dark:bg-slate-900 text-slate-600 dark:text-slate-300 overflow-hidden">
+                                <i data-lucide="github" class="h-8 w-8"></i>
+                            </div>
+                            <div>
+                                <h3 id="github-name" class="text-lg font-bold text-slate-900 dark:text-white">Abhinav
+                                    Yadav</h3>
+                                <p id="github-login" class="font-mono text-xs text-sky-600 dark:text-sky-400">
+                                    @abhinavnovel01</p>
+                                <p id="github-bio" class="mt-1 text-xs sm:text-sm text-slate-600 dark:text-slate-400">
+                                    Data Science Enthusiast | AI/ML</p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-wrap items-center gap-2.5">
+                            <button type="button" id="github-retry-btn"
+                                class="hidden inline-flex items-center gap-1.5 rounded-xl border border-slate-200 dark:border-slate-800 px-3.5 py-2 text-xs font-medium text-slate-700 dark:text-slate-300 hover:border-sky-500/50 transition-colors">
+                                <i data-lucide="refresh-cw" class="h-3.5 w-3.5"></i>
+                                Retry
+                            </button>
+                            <a href="https://github.com/abhinavnovel01" target="_blank" rel="noopener noreferrer"
+                                class="inline-flex items-center gap-2 rounded-xl bg-sky-500 px-5 py-2.5 text-sm font-semibold text-slate-950 hover:bg-sky-400 transition-colors">
+                                <i data-lucide="github" class="h-4 w-4"></i>
+                                View GitHub Profile
+                                <i data-lucide="arrow-up-right" class="h-4 w-4"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="github-repos-container" class="mt-6"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 sm:py-24 border-t border-slate-200/60 dark:border-slate-800/60">
+            <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+                <div class="reveal max-w-2xl mb-10 md:mb-12">
+                    <span
+                        class="inline-block font-mono text-xs uppercase tracking-widest text-sky-600 dark:text-sky-400 mb-2">07
+                        / Contact</span>
+                    <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Let's
+                        Connect</h2>
+                    <p class="mt-2.5 text-sm sm:text-base text-slate-600 dark:text-slate-400 leading-relaxed">Have an
+                        idea, opportunity, or just want to talk about technology? Feel free to reach out.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                    <div class="reveal lg:col-span-5 space-y-4">
+                        <a href="mailto:abhinav.ydv0202@gmail.com"
+                            class="flex items-center gap-4 rounded-2xl border border-slate-200/80 dark:border-slate-800/90 bg-white/85 dark:bg-surface-cardDark/85 p-5 hover:border-sky-500/45 transition-colors">
+                            <div
+                                class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-sky-500/10 text-sky-600 dark:text-sky-400 border border-sky-500/20">
+                                <i data-lucide="mail" class="h-5 w-5"></i>
+                            </div>
+                            <div class="min-w-0">
+                                <p
+                                    class="text-xs font-mono uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                                    Email</p>
+                                <p class="mt-0.5 text-sm font-medium text-slate-900 dark:text-white truncate">
+                                    abhinav.ydv0202@gmail.com</p>
+                            </div>
+                        </a>
+
+                        <a href="tel:+919277366192"
+                            class="flex items-center gap-4 rounded-2xl border border-slate-200/80 dark:border-slate-800/90 bg-white/85 dark:bg-surface-cardDark/85 p-5 hover:border-sky-500/45 transition-colors">
+                            <div
+                                class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-sky-500/10 text-sky-600 dark:text-sky-400 border border-sky-500/20">
+                                <i data-lucide="phone" class="h-5 w-5"></i>
+                            </div>
+                            <div>
+                                <p
+                                    class="text-xs font-mono uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                                    Phone</p>
+                                <p class="mt-0.5 text-sm font-medium text-slate-900 dark:text-white">+91 92773 66192</p>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/abhinavnovel01" target="_blank" rel="noopener noreferrer"
+                            class="flex items-center gap-4 rounded-2xl border border-slate-200/80 dark:border-slate-800/90 bg-white/85 dark:bg-surface-cardDark/85 p-5 hover:border-sky-500/45 transition-colors">
+                            <div
+                                class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-sky-500/10 text-sky-600 dark:text-sky-400 border border-sky-500/20">
+                                <i data-lucide="github" class="h-5 w-5"></i>
+                            </div>
+                            <div>
+                                <p
+                                    class="text-xs font-mono uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                                    GitHub</p>
+                                <p class="mt-0.5 text-sm font-medium text-slate-900 dark:text-white">
+                                    github.com/abhinavnovel01</p>
+                            </div>
+                        </a>
+
+                        <div
+                            class="flex items-center gap-4 rounded-2xl border border-slate-200/80 dark:border-slate-800/90 bg-white/85 dark:bg-surface-cardDark/85 p-5">
+                            <div
+                                class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">
+                                <i data-lucide="map-pin" class="h-5 w-5"></i>
+                            </div>
+                            <div>
+                                <p
+                                    class="text-xs font-mono uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                                    Location</p>
+                                <p class="mt-0.5 text-sm font-medium text-slate-900 dark:text-white">Lucknow, India</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form id="contact-form" novalidate
+                        class="reveal lg:col-span-7 rounded-2xl border border-slate-200/80 dark:border-slate-800/90 bg-white/85 dark:bg-surface-cardDark/85 p-6 sm:p-8 shadow-sm dark:shadow-none space-y-5">
+                        <div class="hidden" aria-hidden="true">
+                            <label for="contact-website">Website</label>
+                            <input id="contact-website" name="website" type="text" tabindex="-1" autocomplete="off" />
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="contact-name"
+                                    class="block text-xs font-medium text-slate-700 dark:text-slate-300 mb-1.5">Name
+                                    <span class="text-sky-500">*</span></label>
+                                <input id="contact-name" name="name" type="text" required placeholder="Your name"
+                                    class="w-full rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/70 dark:bg-slate-900/70 px-3.5 py-2.5 text-sm text-slate-900 dark:text-white placeholder:text-slate-400 focus:border-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-500/20" />
+                                <p id="error-name" class="hidden mt-1 text-xs text-rose-500"></p>
+                            </div>
+
+                            <div>
+                                <label for="contact-email"
+                                    class="block text-xs font-medium text-slate-700 dark:text-slate-300 mb-1.5">Email
+                                    <span class="text-sky-500">*</span></label>
+                                <input id="contact-email" name="email" type="email" required
+                                    placeholder="you@example.com"
+                                    class="w-full rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/70 dark:bg-slate-900/70 px-3.5 py-2.5 text-sm text-slate-900 dark:text-white placeholder:text-slate-400 focus:border-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-500/20" />
+                                <p id="error-email" class="hidden mt-1 text-xs text-rose-500"></p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="contact-subject"
+                                class="block text-xs font-medium text-slate-700 dark:text-slate-300 mb-1.5">Subject
+                                <span class="text-sky-500">*</span></label>
+                            <input id="contact-subject" name="subject" type="text" required
+                                placeholder="Project collaboration, internship, or inquiry"
+                                class="w-full rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/70 dark:bg-slate-900/70 px-3.5 py-2.5 text-sm text-slate-900 dark:text-white placeholder:text-slate-400 focus:border-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-500/20" />
+                            <p id="error-subject" class="hidden mt-1 text-xs text-rose-500"></p>
+                        </div>
+
+                        <div>
+                            <label for="contact-message"
+                                class="block text-xs font-medium text-slate-700 dark:text-slate-300 mb-1.5">Message
+                                <span class="text-sky-500">*</span></label>
+                            <textarea id="contact-message" name="message" rows="4" required
+                                placeholder="Write your message here..."
+                                class="w-full rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/70 dark:bg-slate-900/70 px-3.5 py-2.5 text-sm text-slate-900 dark:text-white placeholder:text-slate-400 focus:border-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-500/20 resize-y"></textarea>
+                            <p id="error-message" class="hidden mt-1 text-xs text-rose-500"></p>
+                        </div>
+
+                        <div id="contact-feedback" role="status"
+                            class="hidden items-start gap-2.5 rounded-xl border p-3.5 text-xs leading-relaxed"></div>
+
+                        <div class="flex flex-wrap items-center justify-between gap-3 pt-1">
+                            <button type="submit" id="contact-submit-btn"
+                                class="inline-flex items-center gap-2 rounded-xl bg-sky-500 px-6 py-3 text-sm font-semibold text-slate-950 hover:bg-sky-400 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-500">
+                                <i data-lucide="send" class="h-4 w-4"></i>
+                                Send Message
+                            </button>
+                            <a href="mailto:abhinav.ydv0202@gmail.com"
+                                class="text-xs font-medium text-sky-600 dark:text-sky-400 hover:underline">
+                                Open in email client instead
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Project Detail Modal -->
+    <div id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"
+        class="hidden fixed inset-0 z-50 flex items-center justify-center bg-slate-950/70 backdrop-blur-sm p-4">
+        <div id="project-modal-card"
+            class="relative w-full max-w-lg rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-surface-cardDark p-6 sm:p-7 shadow-2xl">
+            <button type="button" id="modal-close-btn" aria-label="Close project details"
+                class="absolute top-4 right-4 inline-flex h-8 w-8 items-center justify-center rounded-lg border border-slate-200 dark:border-slate-800 text-slate-500 hover:text-slate-900 dark:hover:text-white">
+                <i data-lucide="x" class="h-4 w-4"></i>
+            </button>
+            <span id="modal-category"
+                class="inline-block rounded-full border border-sky-500/30 bg-sky-500/10 px-2.5 py-1 text-[11px] font-medium text-sky-700 dark:text-sky-300"></span>
+            <h3 id="modal-title" class="mt-3 text-xl font-bold text-slate-900 dark:text-white"></h3>
+            <p id="modal-description" class="mt-3 text-sm text-slate-600 dark:text-slate-300 leading-relaxed"></p>
+            <div class="mt-5">
+                <p class="font-mono text-[11px] uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-2">
+                    Technologies</p>
+                <div id="modal-tech" class="flex flex-wrap gap-1.5"></div>
+            </div>
+            <div id="modal-actions"
+                class="mt-6 pt-4 border-t border-slate-200 dark:border-slate-800 flex flex-wrap items-center gap-3">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-200/80 dark:border-slate-800/80 bg-white/60 dark:bg-[#05070B]">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-12">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-8">
+                <div>
+                    <p class="text-base font-semibold text-slate-900 dark:text-white">Abhinav Yadav</p>
+                    <p class="mt-1 text-sm text-slate-600 dark:text-slate-400">Data Science Enthusiast | AI/ML</p>
+                </div>
+
+                <nav aria-label="Footer Navigation" class="flex flex-wrap gap-x-6 gap-y-2">
+                    <a href="#home"
+                        class="text-sm text-slate-600 dark:text-slate-400 hover:text-sky-600 dark:hover:text-sky-400 transition-colors">Home</a>
+                    <a href="#about"
+                        class="text-sm text-slate-600 dark:text-slate-400 hover:text-sky-600 dark:hover:text-sky-400 transition-colors">About</a>
+                    <a href="#education"
+                        class="text-sm text-slate-600 dark:text-slate-400 hover:text-sky-600 dark:hover:text-sky-400 transition-colors">Education</a>
+                    <a href="#skills"
+                        class="text-sm text-slate-600 dark:text-slate-400 hover:text-sky-600 dark:hover:text-sky-400 transition-colors">Skills</a>
+                    <a href="#projects"
+                        class="text-sm text-slate-600 dark:text-slate-400 hover:text-sky-600 dark:hover:text-sky-400 transition-colors">Projects</a>
+                    <a href="#contact"
+                        class="text-sm text-slate-600 dark:text-slate-400 hover:text-sky-600 dark:hover:text-sky-400 transition-colors">Contact</a>
+                </nav>
+
+                <div class="flex items-center gap-2.5">
+                    <a href="https://github.com/abhinavnovel01" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub"
+                        class="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:border-sky-500/50 hover:text-sky-600 dark:hover:text-sky-400 transition-colors">
+                        <i data-lucide="github" class="h-4 w-4"></i>
+                    </a>
+                    <a href="mailto:abhinav.ydv0202@gmail.com" aria-label="Email"
+                        class="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:border-sky-500/50 hover:text-sky-600 dark:hover:text-sky-400 transition-colors">
+                        <i data-lucide="mail" class="h-4 w-4"></i>
+                    </a>
+                    <button type="button" id="back-to-top-btn" aria-label="Back to top"
+                        class="inline-flex h-9 items-center gap-1.5 rounded-lg border border-slate-200 dark:border-slate-800 px-3 text-xs font-medium text-slate-700 dark:text-slate-300 hover:border-sky-500/50 hover:text-sky-600 dark:hover:text-sky-400 transition-colors">
+                        <i data-lucide="arrow-up" class="h-3.5 w-3.5"></i>
+                        Top
+                    </button>
+                </div>
+            </div>
+
+            <div
+                class="mt-8 pt-6 border-t border-slate-200/70 dark:border-slate-800/70 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-slate-500">
+                <p>Designed &amp; built with curiosity, code, and a passion for technology.</p>
+                <p id="copyright-year"></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function () {
+            const skillCategories = [
+                {
+                    title: 'Programming Languages',
+                    description: 'Core languages used for problem solving, algorithms, and data scripts.',
+                    icon: 'code-2',
+                    skills: [
+                        { name: 'Python', tag: 'Core' },
+                        { name: 'C', tag: 'Core' },
+                        { name: 'C++', tag: 'Core' },
+                        { name: 'JavaScript', tag: 'Learning' },
+                        { name: 'SQL', tag: 'Learning' }
+                    ]
+                },
+                {
+                    title: 'Data Science & AI',
+                    description: 'Analytical foundations, numerical computing, and intelligent modeling.',
+                    icon: 'cpu',
+                    skills: [
+                        { name: 'Data Analysis', tag: 'Core' },
+                        { name: 'Pandas', tag: 'Core' },
+                        { name: 'NumPy', tag: 'Core' },
+                        { name: 'Machine Learning', tag: 'Learning' },
+                        { name: 'Artificial Intelligence', tag: 'Learning' },
+                        { name: 'Statistics', tag: 'Core' },
+                        { name: 'Data Visualization', tag: 'Learning' }
+                    ]
+                },
+                {
+                    title: 'Web Development',
+                    description: 'Modern frontend building blocks for interactive interfaces.',
+                    icon: 'layout',
+                    skills: [
+                        { name: 'HTML5', tag: 'Core' },
+                        { name: 'CSS3', tag: 'Core' },
+                        { name: 'React', tag: 'Learning' },
+                        { name: 'Tailwind CSS', tag: 'Learning' }
+                    ]
+                },
+                {
+                    title: 'Tools & Platforms',
+                    description: 'Version control, notebooks, and everyday development environments.',
+                    icon: 'wrench',
+                    skills: [
+                        { name: 'Git', tag: 'Core' },
+                        { name: 'GitHub', tag: 'Core' },
+                        { name: 'VS Code', tag: 'Core' },
+                        { name: 'Jupyter Notebook', tag: 'Core' }
+                    ]
+                }
+            ];
+
+            const projectsData = [
+                {
+                    id: 'project-slot-1',
+                    title: 'Project Name',
+                    description: 'Add project description — outline the problem statement, dataset or model approach, and key takeaways.',
+                    category: 'AI / ML',
+                    technologies: ['Python', 'Machine Learning', 'Pandas', 'NumPy'],
+                    githubUrl: '',
+                    liveUrl: '',
+                    featured: true
+                },
+                {
+                    id: 'project-slot-2',
+                    title: 'Project Name',
+                    description: 'Add project description — summarize your exploratory data analysis, statistical findings, and visualizations.',
+                    category: 'Data Science',
+                    technologies: ['Python', 'Jupyter Notebook', 'Data Visualization', 'Statistics'],
+                    githubUrl: '',
+                    liveUrl: '',
+                    featured: false
+                },
+                {
+                    id: 'project-slot-3',
+                    title: 'Project Name',
+                    description: 'Add project description — describe the frontend architecture, responsive UI components, and core features.',
+                    category: 'Web Development',
+                    technologies: ['React', 'TypeScript', 'Tailwind CSS'],
+                    githubUrl: '',
+                    liveUrl: '',
+                    featured: false
+                }
+            ];
+
+            const exploringTopics = [
+                { id: 'ai', name: 'Artificial Intelligence', focus: 'Search, reasoning, and intelligent agent architectures.' },
+                { id: 'ml', name: 'Machine Learning', focus: 'Supervised and unsupervised modeling workflows.' },
+                { id: 'ds', name: 'Data Science', focus: 'Exploratory data analysis, feature engineering, and storytelling.' },
+                { id: 'dl', name: 'Deep Learning', focus: 'Neural network fundamentals, backpropagation, and representation learning.' },
+                { id: 'genai', name: 'Generative AI', focus: 'Large language models, prompting patterns, and applied AI workflows.' },
+                { id: 'analytics', name: 'Data Analytics', focus: 'Turning raw datasets into clear, actionable visual summaries.' }
+            ];
+
+            // Theme Persistence
+            const THEME_KEY = 'abhinav-portfolio-theme';
+            function applyTheme(theme) {
+                if (theme === 'dark') {
+                    document.documentElement.classList.add('dark');
+                } else {
+                    document.documentElement.classList.remove('dark');
+                }
+                try { localStorage.setItem(THEME_KEY, theme); } catch (e) { }
+            }
+
+            try {
+                const saved = localStorage.getItem(THEME_KEY);
+                if (saved === 'light' || saved === 'dark') applyTheme(saved);
+            } catch (e) { }
+
+            function toggleTheme() {
+                const isDark = document.documentElement.classList.contains('dark');
+                applyTheme(isDark ? 'light' : 'dark');
+            }
+
+            document.getElementById('theme-toggle-desktop').addEventListener('click', toggleTheme);
+            document.getElementById('theme-toggle-mobile').addEventListener('click', toggleTheme);
+
+            // Mobile Drawer
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileDrawer = document.getElementById('mobile-drawer');
+            mobileMenuBtn.addEventListener('click', function () {
+                const isOpen = !mobileDrawer.classList.contains('hidden');
+                mobileDrawer.classList.toggle('hidden', isOpen);
+                mobileMenuBtn.setAttribute('aria-expanded', String(!isOpen));
+            });
+            document.querySelectorAll('.mobile-nav-link').forEach(function (link) {
+                link.addEventListener('click', function () {
+                    mobileDrawer.classList.add('hidden');
+                    mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                });
+            });
+
+            // Navbar Blur on Scroll
+            const navbar = document.getElementById('navbar');
+            function updateNavbar() {
+                if (window.scrollY > 24) {
+                    navbar.className = 'fixed top-0 inset-x-0 z-50 transition-all duration-300 bg-white/85 dark:bg-surface-dark/85 backdrop-blur-md border-b border-slate-200/70 dark:border-slate-800/80 shadow-sm dark:shadow-none';
+                } else {
+                    navbar.className = 'fixed top-0 inset-x-0 z-50 transition-all duration-300 bg-transparent border-b border-transparent';
+                }
+            }
+            window.addEventListener('scroll', updateNavbar, { passive: true });
+            updateNavbar();
+
+            // Active Section Scroll-Spy
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sectionIds = ['home', 'about', 'education', 'skills', 'projects', 'contact'];
+            const sectionObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.id;
+                        navLinks.forEach(function (link) {
+                            const isMatch = link.getAttribute('data-nav') === id;
+                            link.className = isMatch
+                                ? 'nav-link px-3 py-1.5 rounded-lg text-sm font-medium transition-colors text-sky-600 dark:text-sky-400 bg-sky-500/10'
+                                : 'nav-link px-3 py-1.5 rounded-lg text-sm font-medium transition-colors text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100/70 dark:hover:bg-slate-800/60';
+                        });
+                    }
+                });
+            }, { rootMargin: '-25% 0px -55% 0px', threshold: [0.1, 0.3] });
+            sectionIds.forEach(function (id) {
+                const el = document.getElementById(id);
+                if (el) sectionObserver.observe(el);
+            });
+
+            // Scroll Reveal
+            const revealObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            document.querySelectorAll('.reveal').forEach(function (el) { revealObserver.observe(el); });
+
+            // Neural Mesh Canvas
+            const canvas = document.getElementById('neural-canvas');
+            if (canvas) {
+                const ctx = canvas.getContext('2d');
+                const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+                const pointer = { x: -9999, y: -9999 };
+                function resizeCanvas() {
+                    const rect = canvas.getBoundingClientRect();
+                    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+                    canvas.width = rect.width * dpr;
+                    canvas.height = rect.height * dpr;
+                    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+                }
+                resizeCanvas();
+                window.addEventListener('resize', resizeCanvas);
+
+                const nodes = Array.from({ length: 24 }, function (_, i) {
+                    return {
+                        x: ((i * 73) % 340) + 20,
+                        y: ((i * 137) % 210) + 20,
+                        vx: ((i % 5) - 2) * 0.16 || 0.12,
+                        vy: (((i + 2) % 5) - 2) * 0.14 || -0.11,
+                        radius: (i % 3) + 2
+                    };
+                });
+
+                function drawNeural() {
+                    const rect = canvas.getBoundingClientRect();
+                    const w = rect.width;
+                    const h = rect.height;
+                    ctx.clearRect(0, 0, w, h);
+
+                    for (let i = 0; i < nodes.length; i++) {
+                        const n = nodes[i];
+                        if (!reducedMotion) {
+                            n.x += n.vx;
+                            n.y += n.vy;
+                            if (n.x < 16 || n.x > w - 16) n.vx *= -1;
+                            if (n.y < 16 || n.y > h - 16) n.vy *= -1;
+                        }
+                        const dxP = pointer.x - n.x;
+                        const dyP = pointer.y - n.y;
+                        const distP = Math.hypot(dxP, dyP);
+                        if (distP < 110 && distP > 0 && !reducedMotion) {
+                            n.x -= (dxP / distP) * 0.35;
+                            n.y -= (dyP / distP) * 0.35;
+                        }
+                        for (let j = i + 1; j < nodes.length; j++) {
+                            const m = nodes[j];
+                            const dist = Math.hypot(n.x - m.x, n.y - m.y);
+                            if (dist < 105) {
+                                ctx.beginPath();
+                                ctx.moveTo(n.x, n.y);
+                                ctx.lineTo(m.x, m.y);
+                                ctx.strokeStyle = 'rgba(56, 189, 248, ' + ((1 - dist / 105) * 0.32) + ')';
+                                ctx.lineWidth = 1;
+                                ctx.stroke();
+                            }
+                        }
+                        ctx.beginPath();
+                        ctx.arc(n.x, n.y, n.radius, 0, Math.PI * 2);
+                        ctx.fillStyle = i % 4 === 0 ? 'rgba(99, 102, 241, 0.85)' : 'rgba(56, 189, 248, 0.85)';
+                        ctx.fill();
+                    }
+                    if (!reducedMotion) requestAnimationFrame(drawNeural);
+                }
+                drawNeural();
+                canvas.addEventListener('pointermove', function (e) {
+                    const rect = canvas.getBoundingClientRect();
+                    pointer.x = e.clientX - rect.left;
+                    pointer.y = e.clientY - rect.top;
+                });
+                canvas.addEventListener('pointerleave', function () {
+                    pointer.x = -9999;
+                    pointer.y = -9999;
+                });
+            }
+
+            // Render Skills
+            const skillsGrid = document.getElementById('skills-grid');
+            skillsGrid.innerHTML = skillCategories.map(function (cat) {
+                const badges = cat.skills.map(function (s) {
+                    const dotColor = s.tag === 'Core' ? 'bg-sky-500' : 'bg-indigo-400';
+                    return '<span class="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/80 px-3 py-1.5 text-xs font-medium text-slate-700 dark:text-slate-300">' +
+                        '<span class="h-1.5 w-1.5 rounded-full ' + dotColor + '"></span>' + s.name + '</span>';
+                }).join('');
+                return '<div class="group rounded-2xl border border-slate-200/80 dark:border-slate-800/90 bg-white/80 dark:bg-surface-cardDark/80 backdrop-blur-sm p-6 hover:border-sky-500/40 transition-all duration-300 shadow-sm dark:shadow-none">' +
+                    '<div class="flex items-start gap-3.5 mb-4">' +
+                    '<div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-sky-500/10 text-sky-600 dark:text-sky-400 border border-sky-500/20">' +
+                    '<i data-lucide="' + cat.icon + '" class="h-5 w-5"></i>' +
+                    '</div>' +
+                    '<div>' +
+                    '<h3 class="text-base font-semibold text-slate-900 dark:text-white">' + cat.title + '</h3>' +
+                    '<p class="mt-0.5 text-xs text-slate-500 dark:text-slate-400 leading-relaxed">' + cat.description + '</p>' +
+                    '</div>' +
+                    '</div>' +
+                    '<div class="flex flex-wrap gap-2 pt-2">' + badges + '</div>' +
+                    '</div>';
+            }).join('');
+
+            // Render Projects + Filter
+            let activeCategory = 'All';
+            const categories = ['All', 'AI / ML', 'Data Science', 'Web Development'];
+            const filtersEl = document.getElementById('project-filters');
+            const projectsGrid = document.getElementById('projects-grid');
+
+            function renderFilters() {
+                filtersEl.innerHTML = categories.map(function (cat) {
+                    const selected = cat === activeCategory;
+                    return '<button type="button" data-cat="' + cat + '" role="tab" aria-selected="' + selected + '" class="filter-btn rounded-lg px-3 py-1.5 text-xs font-medium transition-colors ' +
+                        (selected ? 'bg-sky-500 text-slate-950 shadow-sm' : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white') + '">' +
+                        cat + '</button>';
+                }).join('');
+                filtersEl.querySelectorAll('.filter-btn').forEach(function (btn) {
+                    btn.addEventListener('click', function () {
+                        activeCategory = btn.getAttribute('data-cat');
+                        renderFilters();
+                        renderProjects();
+                    });
+                });
+            }
+
+            function renderProjects() {
+                const list = activeCategory === 'All'
+                    ? projectsData
+                    : projectsData.filter(function (p) { return p.category === activeCategory; });
+
+                projectsGrid.innerHTML = list.map(function (p) {
+                    const techHtml = p.technologies.map(function (t) {
+                        return '<span class="rounded-md bg-slate-100 dark:bg-slate-800/80 px-2.5 py-1 font-mono text-[11px] text-slate-700 dark:text-slate-300">' + t + '</span>';
+                    }).join('');
+                    const featuredBadge = p.featured
+                        ? '<span class="inline-flex items-center rounded-full border border-sky-500/30 bg-sky-500/15 backdrop-blur-md px-2.5 py-1 text-[11px] font-medium text-sky-700 dark:text-sky-300">Featured</span>'
+                        : '';
+                    const spanClass = p.featured ? 'md:col-span-2 lg:col-span-2' : '';
+                    return '<article class="group flex flex-col rounded-2xl border border-slate-200/80 dark:border-slate-800/90 bg-white/90 dark:bg-surface-cardDark/85 overflow-hidden hover:border-sky-500/45 transition-all duration-300 shadow-sm hover:shadow-lg dark:shadow-none ' + spanClass + '">' +
+                        '<div class="relative h-44 sm:h-48 w-full overflow-hidden border-b border-slate-200/70 dark:border-slate-800/80 bg-gradient-to-br from-slate-100 via-slate-50 to-sky-50 dark:from-[#0B1120] dark:via-[#0F172A] dark:to-[#111C33]">' +
+                        '<div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center bg-dot-grid">' +
+                        '<div class="flex h-12 w-12 items-center justify-center rounded-2xl border border-sky-500/25 bg-sky-500/10 text-sky-600 dark:text-sky-400 mb-3">' +
+                        '<i data-lucide="layers" class="h-6 w-6"></i>' +
+                        '</div>' +
+                        '<span class="font-mono text-[11px] uppercase tracking-wider text-slate-500 dark:text-slate-400">Editable Project Slot</span>' +
+                        '</div>' +
+                        '<div class="absolute top-3 left-3 flex items-center gap-2">' +
+                        '<span class="inline-flex items-center rounded-full border border-slate-200/80 dark:border-slate-700/80 bg-white/85 dark:bg-slate-900/85 backdrop-blur-md px-2.5 py-1 text-[11px] font-medium text-slate-700 dark:text-slate-200">' + p.category + '</span>' +
+                        featuredBadge +
+                        '</div>' +
+                        '</div>' +
+                        '<div class="flex flex-1 flex-col p-6">' +
+                        '<h3 class="text-lg font-semibold text-slate-900 dark:text-white group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors">' + p.title + '</h3>' +
+                        '<p class="mt-2 text-sm text-slate-600 dark:text-slate-400 leading-relaxed flex-1">' + p.description + '</p>' +
+                        '<div class="mt-4 flex flex-wrap gap-1.5">' + techHtml + '</div>' +
+                        '<div class="mt-6 flex flex-wrap items-center gap-2.5 pt-4 border-t border-slate-200/70 dark:border-slate-800/70">' +
+                        '<button type="button" data-project-id="' + p.id + '" class="view-project-btn inline-flex items-center gap-1.5 rounded-lg bg-slate-900 dark:bg-slate-800 px-3.5 py-2 text-xs font-medium text-white hover:bg-sky-600 dark:hover:bg-sky-500 dark:hover:text-slate-950 transition-colors">' +
+                        'View Project <i data-lucide="arrow-up-right" class="h-3.5 w-3.5"></i>' +
+                        '</button>' +
+                        '<span class="inline-flex items-center gap-1.5 rounded-lg border border-dashed border-slate-300 dark:border-slate-700/80 px-3.5 py-2 text-xs font-medium text-slate-400 dark:text-slate-500">' +
+                        '<i data-lucide="folder-git-2" class="h-3.5 w-3.5"></i> Repo Pending' +
+                        '</span>' +
+                        '</div>' +
+                        '</div>' +
+                        '</article>';
+                }).join('');
+
+                if (window.lucide) window.lucide.createIcons();
+
+                projectsGrid.querySelectorAll('.view-project-btn').forEach(function (btn) {
+                    btn.addEventListener('click', function () {
+                        const id = btn.getAttribute('data-project-id');
+                        const proj = projectsData.find(function (item) { return item.id === id; });
+                        if (proj) openModal(proj);
+                    });
+                });
+            }
+
+            // Project Modal
+            const modal = document.getElementById('project-modal');
+            const modalCloseBtn = document.getElementById('modal-close-btn');
+            function openModal(p) {
+                document.getElementById('modal-category').textContent = p.category;
+                document.getElementById('modal-title').textContent = p.title;
+                document.getElementById('modal-description').textContent = p.description;
+                document.getElementById('modal-tech').innerHTML = p.technologies.map(function (t) {
+                    return '<span class="rounded-md bg-slate-100 dark:bg-slate-800 px-2.5 py-1 font-mono text-xs text-slate-700 dark:text-slate-300">' + t + '</span>';
+                }).join('');
+                document.getElementById('modal-actions').innerHTML =
+                    '<span class="inline-flex items-center gap-1.5 rounded-xl border border-dashed border-slate-300 dark:border-slate-700 px-4 py-2 text-xs text-slate-500 dark:text-slate-400">Update src/data/projects.ts to add repository URL</span>';
+                modal.classList.remove('hidden');
+            }
+            modalCloseBtn.addEventListener('click', function () { modal.classList.add('hidden'); });
+            modal.addEventListener('click', function (e) {
+                if (e.target === modal) modal.classList.add('hidden');
+            });
+
+            renderFilters();
+            renderProjects();
+
+            // Currently Exploring
+            let activeExploringId = exploringTopics[0].id;
+            const exploringTagsEl = document.getElementById('exploring-tags');
+            const exploringDetailEl = document.getElementById('exploring-detail');
+
+            function renderExploring() {
+                exploringTagsEl.innerHTML = exploringTopics.map(function (topic) {
+                    const isActive = topic.id === activeExploringId;
+                    return '<button type="button" data-topic-id="' + topic.id + '" class="exploring-btn inline-flex items-center gap-2 rounded-xl border px-4 py-2.5 text-sm font-medium transition-all ' +
+                        (isActive
+                            ? 'border-sky-500/60 bg-sky-500/15 text-sky-700 dark:text-sky-300 shadow-sm'
+                            : 'border-slate-200 dark:border-slate-800 bg-slate-50/80 dark:bg-slate-900/70 text-slate-700 dark:text-slate-300 hover:border-sky-500/40') + '">' +
+                        '<i data-lucide="compass" class="h-4 w-4 ' + (isActive ? 'text-sky-500' : 'text-slate-400') + '"></i>' +
+                        topic.name + '</button>';
+                }).join('');
+
+                const current = exploringTopics.find(function (t) { return t.id === activeExploringId; }) || exploringTopics[0];
+                exploringDetailEl.innerHTML = '<strong class="font-semibold text-slate-900 dark:text-white">' + current.name + ':</strong> ' + current.focus;
+
+                if (window.lucide) window.lucide.createIcons();
+
+                exploringTagsEl.querySelectorAll('.exploring-btn').forEach(function (btn) {
+                    btn.addEventListener('click', function () {
+                        activeExploringId = btn.getAttribute('data-topic-id');
+                        renderExploring();
+                    });
+                });
+            }
+            renderExploring();
+
+            // Live GitHub API Integration with Graceful Fallback
+            const reposContainer = document.getElementById('github-repos-container');
+            const retryBtn = document.getElementById('github-retry-btn');
+
+            async function loadGitHub() {
+                retryBtn.classList.add('hidden');
+                reposContainer.innerHTML =
+                    '<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">' +
+                    '<div class="h-28 rounded-xl border border-slate-200/70 dark:border-slate-800/80 bg-slate-100/60 dark:bg-slate-900/50 animate-pulse"></div>' +
+                    '<div class="h-28 rounded-xl border border-slate-200/70 dark:border-slate-800/80 bg-slate-100/60 dark:bg-slate-900/50 animate-pulse"></div>' +
+                    '<div class="h-28 rounded-xl border border-slate-200/70 dark:border-slate-800/80 bg-slate-100/60 dark:bg-slate-900/50 animate-pulse"></div>' +
+                    '</div>';
+
+                try {
+                    const [userRes, reposRes] = await Promise.all([
+                        fetch('https://api.github.com/users/abhinavnovel01'),
+                        fetch('https://api.github.com/users/abhinavnovel01/repos?sort=updated&per_page=6')
+                    ]);
+                    if (!userRes.ok) throw new Error('GitHub API status ' + userRes.status);
+                    const userData = await userRes.json();
+
+                    if (userData.avatar_url) {
+                        document.getElementById('github-avatar-wrap').innerHTML =
+                            '<img src="' + userData.avatar_url + '" alt="Abhinav Yadav GitHub avatar" class="h-16 w-16 object-cover" />';
+                    }
+                    if (userData.name) document.getElementById('github-name').textContent = userData.name;
+                    if (userData.login) document.getElementById('github-login').textContent = '@' + userData.login;
+                    if (userData.bio) document.getElementById('github-bio').textContent = userData.bio;
+
+                    const repos = reposRes.ok ? await reposRes.json() : [];
+                    if (!Array.isArray(repos) || repos.length === 0) {
+                        reposContainer.innerHTML =
+                            '<div class="rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/70 dark:bg-slate-900/50 p-5 text-sm text-slate-600 dark:text-slate-400">No public repositories returned yet. Visit <a href="https://github.com/abhinavnovel01" target="_blank" rel="noopener noreferrer" class="font-medium text-sky-600 dark:text-sky-400 hover:underline">github.com/abhinavnovel01</a> for updates.</div>';
+                        return;
+                    }
+
+                    reposContainer.innerHTML = '<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">' +
+                        repos.map(function (repo) {
+                            return '<a href="' + repo.html_url + '" target="_blank" rel="noopener noreferrer" class="group flex flex-col justify-between rounded-xl border border-slate-200/80 dark:border-slate-800 bg-slate-50/70 dark:bg-slate-900/50 p-4 hover:border-sky-500/50 transition-all">' +
+                                '<div>' +
+                                '<div class="flex items-center justify-between gap-2">' +
+                                '<span class="inline-flex items-center gap-1.5 text-sm font-semibold text-slate-900 dark:text-white group-hover:text-sky-600 dark:group-hover:text-sky-400 truncate">' +
+                                '<i data-lucide="book-marked" class="h-4 w-4 shrink-0 text-sky-500"></i>' +
+                                '<span class="truncate">' + repo.name + '</span>' +
+                                '</span>' +
+                                '<i data-lucide="arrow-up-right" class="h-3.5 w-3.5 shrink-0 text-slate-400 group-hover:text-sky-500"></i>' +
+                                '</div>' +
+                                '<p class="mt-2 text-xs text-slate-600 dark:text-slate-400 line-clamp-2">' + (repo.description || 'Repository on GitHub.') + '</p>' +
+                                '</div>' +
+                                '<div class="mt-4 flex items-center justify-between text-[11px] font-mono text-slate-500 dark:text-slate-400">' +
+                                '<span>' + (repo.language || 'Code') + '</span>' +
+                                '<span class="inline-flex items-center gap-1"><i data-lucide="star" class="h-3 w-3"></i>' + repo.stargazers_count + '</span>' +
+                                '</div>' +
+                                '</a>';
+                        }).join('') + '</div>';
+                    if (window.lucide) window.lucide.createIcons();
+                } catch (err) {
+                    retryBtn.classList.remove('hidden');
+                    reposContainer.innerHTML =
+                        '<div class="rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/70 dark:bg-slate-900/50 p-5 text-sm text-slate-600 dark:text-slate-400">Live GitHub repository data is temporarily unavailable (network offline or API rate limit reached). You can still visit <a href="https://github.com/abhinavnovel01" target="_blank" rel="noopener noreferrer" class="font-medium text-sky-600 dark:text-sky-400 hover:underline">github.com/abhinavnovel01</a> directly.</div>';
+                }
+            }
+            retryBtn.addEventListener('click', loadGitHub);
+            loadGitHub();
+
+            // Contact Form Validation
+            const contactForm = document.getElementById('contact-form');
+            const feedbackEl = document.getElementById('contact-feedback');
+            contactForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+                const honeypot = document.getElementById('contact-website').value;
+                if (honeypot && honeypot.trim().length > 0) return;
+
+                const name = document.getElementById('contact-name').value.trim();
+                const email = document.getElementById('contact-email').value.trim();
+                const subject = document.getElementById('contact-subject').value.trim();
+                const message = document.getElementById('contact-message').value.trim();
+
+                const errs = {
+                    name: name.length < 2 ? 'Please enter at least 2 characters for your name.' : '',
+                    email: !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) ? 'Please enter a valid email address.' : '',
+                    subject: subject.length < 3 ? 'Subject must be at least 3 characters.' : '',
+                    message: message.length < 10 ? 'Message must be at least 10 characters.' : ''
+                };
+
+                let hasErr = false;
+                Object.keys(errs).forEach(function (key) {
+                    const el = document.getElementById('error-' + key);
+                    if (errs[key]) {
+                        el.textContent = errs[key];
+                        el.classList.remove('hidden');
+                        hasErr = true;
+                    } else {
+                        el.textContent = '';
+                        el.classList.add('hidden');
+                    }
+                });
+
+                if (hasErr) {
+                    feedbackEl.classList.add('hidden');
+                    return;
+                }
+
+                feedbackEl.className = 'flex items-start gap-2.5 rounded-xl border border-amber-500/30 bg-amber-500/10 text-amber-800 dark:text-amber-300 p-3.5 text-xs leading-relaxed';
+                feedbackEl.innerHTML = '<i data-lucide="alert-circle" class="h-4 w-4 shrink-0 mt-0.5"></i><span>Validation passed. EmailJS credentials are not configured in this static preview—configure <code>.env</code> in the React project or use the direct email link.</span>';
+                if (window.lucide) window.lucide.createIcons();
+            });
+
+            // Back to Top & Dynamic Copyright Year
+            document.getElementById('back-to-top-btn').addEventListener('click', function () {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+            document.getElementById('copyright-year').textContent = '\u00A9 ' + new Date().getFullYear() + ' Abhinav Yadav. All rights reserved.';
+
+            if (window.lucide) window.lucide.createIcons();
+        })();
+    </script>
+</body>
+
+</html>
